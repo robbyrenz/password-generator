@@ -4,7 +4,7 @@ import random
 
 
 def main():
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!<>?"
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!<>?@#$%^&*()-_=+"
     times = 20  # the length of the password
     password = ""
 
