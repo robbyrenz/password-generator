@@ -4,15 +4,25 @@ import random
 
 
 def main():
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!<>?@#$%^&*()-_=+"
-    times = 20  # the length of the password
+    """The main function of the program"""
+    blueprint = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!<>?@#$%^&*()-_=+"
+    length = 20  # the length of the password
+    password = password_maker(blueprint, length)
+    answer(password)
+
+
+def password_maker(blueprint, length):
+    """makes the password according to the length specified"""
     password = ""
+    while length > 0:
+        char = random.choice(blueprint)  # choose a random letter from letters
+        password = password + char  # append it to password
+        length = length - 1
+    return password
 
-    while times > 0:
-        letter = random.choice(letters)  # choose a random letter from letters
-        password = password + letter  # append it to password
-        times = times - 1
 
+def answer(password):
+    """prints out the result of the password to the user"""
     print()
     print("Here is your random password:")
     print(password)
