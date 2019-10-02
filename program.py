@@ -1,4 +1,4 @@
-# A program I made on Friday, the 13th, 2019, that generates 20 char passwords
+# A program I made on Friday, the 13th, 2019, that generates 20 character-length passwords
 
 import random
 
